@@ -8,6 +8,7 @@ import {
   Portfolio,
   Contact,
   Resume,
+  Footer,
 
 } from "./components";
 
@@ -20,6 +21,7 @@ ReactDOM.render(
       <Route path="/contact" element={<Contact />} />
       <Route path="/resume" element={<Resume />} />
     </Routes>
+    <Footer />
   </Router>,
 
   document.getElementById("root")
