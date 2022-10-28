@@ -14,14 +14,17 @@ import {
 
 ReactDOM.render(
   <Router>
-    <Nav />
-    <Routes>
+    <div className="flex flex-col h-screen justify-between" >
+    <Nav className="flex" />
+    <Routes className='flex'>
+      <Route path="/" element={<About />} />
       <Route path="/about" element={<About />} />
       <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/resume" element={<Resume />} />
     </Routes>
-    <Footer />
+    <Footer className="flex"/>
+    </div>
   </Router>,
 
   document.getElementById("root")

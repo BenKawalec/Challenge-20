@@ -2,9 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-/* footer {
-position:absolute;
-left:0;
-bottom:0;
-right:0;
-} */
+
+
+.grid {
+    display: flex;
+    justify-content: center;
+
+}
+
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+    margin: 40px 20px;
+}
+
+.img-wrapper > img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-wrapper > .container {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(59, 59, 59, 0.829);
+}
+
+.img-wrapper > .container {
+    opacity: 0;
+}
+
+.img-wrapper:hover > .container {
+    opacity: 1;
+}
+
+
+.img-wrapper > .container,
+.img-wrapper > img {
+    transition: ease-in-out 300ms;
+    /* border-radius: 15px; */
+}

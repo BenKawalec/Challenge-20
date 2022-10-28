@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 function Nav() {
 
 return (
-  <header className="bg-gray-800 md:sticky top-0 z-10">
+  <header className="bg-gray-800 md:sticky top-0 z-10 ">
     <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center justify-between ">
       <a className="title-font font-medium text-white mb-4 md:mb-0">
       <NavLink className="navbar-brand" to="/">Ben Kawalec</NavLink>
